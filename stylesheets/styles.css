@@ -56,8 +56,8 @@
 
 body {
   background-color: #fff;
-  padding:50px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding:30px;
+  font: 17px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
 }
@@ -108,7 +108,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
+  width:1260px;
   margin:0 auto;
 }
 
@@ -158,7 +158,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:260px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -224,7 +224,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:910px;
   float:right;
   padding-bottom:50px;
 }
@@ -241,7 +241,7 @@ hr {
 }
 
 footer {
-  width:270px;
+  width:260px;
   float:left;
   position:fixed;
   bottom:50px;
