@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Deependra Singh</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="Deependra Singh,about,contact">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Deependra Singh</h1><h3>Data Scientist</h3>
+        <p>Search &amp; Data Mining <br> Groupon, Palo Alto</p>
+
+        <p class="view">
+          <a href="https://deependra230.github.io">About</a>
+          <br>
+          <a href="https://deependra230.github.io/resume">Resume</a>
+          <br>
+          <a href="https://deependra230.github.io/projects">Projects</a>
+        </p>
+        <p class="view">
+          <a href="https://www.linkedin.com/in/deependra-singh-10175457">LinkedIn</a>
+          <br>
+          <a href="mailto:deependra230[at]gmail[dot]com">Email</a>
+        </p>
+      </header>
+      <section>
+        
+
+
+
+<h4>
+	<a id="locating-coding-regions" class="anchor" href="#locating-coding-regions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Locating Protein Coding Regions in Human DNA | 
+	<span style="font-weight:normal">UCSC Silicon Valley Extension</span>
+</h4>
+
+<p>
+	Used decision tree algorithm to train classifiers based on several coding measures identified by <a href="http://nar.oxfordjournals.org/content/20/24/6441.full.pdf+html">Fickett J. and Tung C.</a> to distinguish between protein coding and noncoding regions on Human DNA sequences ranging from 54 to 162 base pairs in length. processed datasets, python and R source code can be found here. This project was inspired from <a href="http://online.liebertpub.com/doi/abs/10.1089/cmb.1995.2.473"> a paper</a> on the subject by Salzberg S.
+	<div>
+		<p style="float: right;"><img src="img/pruned_dt_108bp.png" height="250px" width="400px" ></p>
+		<p>
+			<ul>
+				<li>Extracted several codon measures from DNA sequences across training, tuning and testing set.</li>
+				<li>Applied Linear Discriminant Analysis (LDA) on resulting coding measure vectors to obtain scalar values of the measure to be used as features.</li>
+				<li>Trained a decision tree classifier from training set and reduced overfitting and complexity of the model using cost complexity pruning. Top of the pruned decision tree for 108bp sequences is displayed alongside:</li>
+			</ul>
+		</p>
+	</div>
+	One of the salient observations was the consistent accuracy of decision tree classifier regardless of the length of the DNA sequence. Other techniques such as LDA, neural networks varied widely in their accuracy for different length DNA sequences.	
+</p>
+&nbsp;
+
+
+
+
+
+<!-- Next project-->
+
+<h4>
+	<a id="query-click" class="anchor" href="#query-click" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Query-Click Analytics | 
+	<span style="font-weight:normal">Search &amp; Data Mining, Groupon</span>
+</h4>
+
+<p>
+	Broadly, this comprises of a set of projects which involved mining vast query-click data gathered through Groupon Search engine, and applications thereof:
+	<ul>
+		<li>Enhanced and Optimized the existing query-click analytics infrastructure in Hive.</li>
+		<li>Designed algorithms using statistical and information theoretic concepts on the query-click data to automate relevance banding for Groupon Search.
+			<ul style="list-style-type:circle">
+				<li>Deependra Singh, Vinay Deolalikar: “Automating Relevance Banding in eCommerce Search using Click Model”. 39th European Conference on Information Retrieval (ECIR 2017). <a href="http://deependra230.github.io/pdf/ProbabilityBanding_abstract.pdf"> abstract-pdf</a></li>
+				<li>Deployed to production in Java registering millions of dollars increase in revenue.</li>
+			</ul>
+		</li>
+		<li>
+			Involved in mining user search intent communities over product categories from query-click data using an assortment of techniques such as one-mode projection, random walks, and clustering and community detection algorithms.
+			<ul style="list-style-type:circle">
+				<li>Neeraj Pradhan, Vinay Deolalikar, Deependra Singh: “Islands of Interest: Mining Concentrations of User Search Intent over E-commerce Product Categories”. 21st Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD 2017). <a href="http://deependra230.github.io/pdf/IslandsOfInterest_abstract.pdf"> abstract-pdf</a></li>
+				<li>Being used in efficient inventory allocation, product taxonomy design, and recommender systems.</li>
+			</ul>
+		</li>
+		<li>
+			[In process] Productionizing work on query-suggestions using random walks on the query-click bipartite graph for related-searches.
+		</li>
+		<li>
+			[In process] Integrating mobile query-click data and increasing the granularity of Click Model.
+		</li>
+	</ul>
+</p>
+&nbsp;
+
+
+<!-- Next project-->
+
+<h4>
+	<a id="nvda" class="anchor" href="#nvda" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Enhancements in NVDA Screen Reader (B.Tech. Thesis) | 
+	<span style="font-weight:normal">Indian Institute of Technology Delhi</span>
+</h4>
+
+<p>
+	<a href="http://www.nvaccess.org/">Non Visual Desktop Access (NVDA)</a> is an open source, portable, python-based screen reader for Microsoft Windows. Being devoid of faculty of proper sight, use of computers is rendered inaccessible to blind and visually impaired, thus limiting their potential, including employability. NVDA screen reader offers invaluable assistance to such indivduals for free of cost. Driven by a desire to apply my skills to a worthy cause, I undertook this project as my thesis: enhancing features and adding supports for important and useful applications in NVDA with feedback from the community.
+
+	<ul>
+		<li> Fixed high priority issues in web-browsers and MS word:
+			<ul style="list-style-type:circle">
+				<li>Fixed unwanted spoken dot at the end of a sentence ending with a link when symbol level 'some' .</li>
+				<li>Fixed missing identifiers for subscripts and superscripts.</li>
+			</ul>
+		</li>
+
+		<li> Added support for all types of charts in MS Excelsheet (new feature):
+			<ul style="list-style-type:circle">
+				<li>Navigational Functionality:
+					<ul style="list-style-type:square">
+						<li>Switching to charts from worksheet and back</li>
+						<li>Switching between charts</li>
+						<li>Switching between sheets while browsing charts</li>
+					</ul>
+				</li>
+				<li>Interpretation Functionality:
+					<ul style="list-style-type:square">
+						<li>Ability to read basic attributes of a chart such as title, name, type, legend, axes, data series etc.</li>
+						<li>Ability to browse data labels inside the chart, and chart specific information</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</p>
+
+
+
+
+      </section>
+ <!--     <footer>
+        <p><small>कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।</small>
+          <br>
+          <small>मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥ BG 2:47</small>
+        </p>
+      </footer> -->
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
+
+
