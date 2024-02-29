@@ -56,10 +56,10 @@
 
 body {
   background-color: #fff;
-  padding:30px;
+  padding:40px;
   font: 17px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#727272;
-  font-weight:400;
+  color:#404040;
+  font-weight:350;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -87,14 +87,11 @@ h3, h4, h5, h6 {
   color:#494949;
 }
 
-a {
-  color:#39c;
-  text-decoration:none;
-}
-
-a:hover {
-  color:#069;
-}
+a:link           { color: #c00 }  /* unvisited links       */
+/*a:visited        { color: #0c0 }  /* visited links         */*/
+a:visited        { color: #0c0 }  /* visited links         */
+a:hover, a:focus { color: #00c }  /* user hovers, or focus */
+a:active         { color: #ccc }  /* active links          */
 
 a small {
   font-size:11px;
@@ -160,7 +157,7 @@ img {
 
 header {
   /*width:260px;*/
-  width:21%;
+  width:20%;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
