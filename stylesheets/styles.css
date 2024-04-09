@@ -62,9 +62,14 @@ body {
   font-weight:350;
 }
 
-h1, h2, h3 {
+h1, h2 {
   color:#222;
   margin:0 0 20px;
+}
+
+h3 {
+  color:#222;
+  margin:0 0 10px;
 }
 
 h4, h5, h6 {
